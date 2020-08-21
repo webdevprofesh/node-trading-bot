@@ -23,8 +23,8 @@ const init = async () => {
         // - bar2 closes > bar1 open
         // - bar2 opens < bar1 close
         // - bar2 volume > bar1 volume
-        const bar1 = bars[symbol[0]];
-        const bar2 = bars[symbol[1]];
+        const bar1 = bars[symbol][0];
+        const bar2 = bars[symbol][1];
         if (
             (bar1 && bar2) &&
             (bar1.c < bar1.o) &&
